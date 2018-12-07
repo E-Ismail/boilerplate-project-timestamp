@@ -2,6 +2,7 @@
 	"name": "fcc-api-projects-boilerplate",
 	"version": "0.0.1",
 	"description": "An FCC Backend Challenge",
+	"author": "Adam",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
@@ -11,7 +12,7 @@
 		"cors": "^2.8.0"
 	},
 	"engines": {
-		"node": "4.4.5"
+		"node": "10.14.1"
 	},
 	"repository": {
 		"type": "git",

@@ -19,7 +19,7 @@
           <li>The API endpoint is <code>GET [project_url]/api/timestamp/:date_string?</code></li>
           <li>A date string is valid if can be successfully parsed by <code>new Date(date_string)</code>.<br>
           Note that the unix timestamp needs to be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br> 
-          In our test we will use date strings compliant with ISO-8601 (e.g. <code>"2016-11-20"</code>) because this will ensure an UTC timestamp.</li>
+          In our test we will use date strings compliant with ISO-8601 (e.g. <code>"2016-11-20"</code>) because this will ensure a UTC timestamp.</li>
           <li>If the date string is <strong>empty</strong> it should be equivalent to trigger <code>new Date()</code>, i.e. the service uses the current timestamp.</li>
           <li>If the date string is <strong>valid</strong> the api returns a JSON having the structure<br><code>{"unix": &lt;date.getTime()&gt;, "utc" : &lt;date.toUTCString()&gt; }</code><br>
             e.g. <code>{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}</code></li>
@@ -30,9 +30,11 @@
 
         <h3>Example Usage:</h3>
         <ul>
-          <li>
-            <code>GET [project url]/api/timestamp/2015-12-25</code></li>
-          <li><code>GET project url]/api/timestamp/1450137600</code></li>
+          <li><code>GET <a href="/api/timestamp/2015-12-25">/api/timestamp/2015-12-25</a></code></li>
+          <li><code>GET <a href="/api/timestamp/1450137600000">/api/timestamp/1450137600000</a></code></li>
+          <li><code>GET <a href="/api/timestamp/1450137600">/api/timestamp/1450137600</a></code></li>
+          <li><code>GET <a href="/api/timestamp/">/api/timestamp/</a></code></li>
+          <li><code>GET <a href="/api/timestamp/invalid">/api/timestamp/invalid</a></code></li>
         </ul>
 
         <h3>Example Output:</h3>
@@ -42,7 +44,7 @@
       </div>
       <div class="footer">
         <p>
-          by <a href="http://www.freecodecamp.com/">freeCodeCamp</a> | <a href="https://hyperdev.com/#!/remix/FCC_API_timestamp_bplate/8338be2-a353-4892-8a0d-6295e4f12eb5">Click here to Remix</a>
+          by <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a> & <a href="https://www.freecodecamp.org/adam111" target="_blank">Adam</a><!-- | <a href="https://glitch.com/#!/remix/FCC_API_timestamp_bplate/8338be2-a353-4892-8a0d-6295e4f12eb5" target="_blank">Click here to Remix</a> -->
         </p>
       </div>
    </body>
