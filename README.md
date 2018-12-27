@@ -1,5 +1,7 @@
+**freeCodeCamp** - APIs and Microservices Project
+------
 
-# API Project: Timestamp Microservice for freeCodeCamp
+**Timestamp Microservice**
 
 ### User stories:
 

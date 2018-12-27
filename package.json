@@ -1,7 +1,7 @@
 {
-	"name": "fcc-api-projects-boilerplate",
-	"version": "0.0.1",
-	"description": "An FCC Backend Challenge",
+	"name": "Timestamp Microservice",
+	"version": "1.0.0",
+	"description": "freeCodeCamp - APIs and Microservices Project: Timestamp Microservice",
 	"author": "Adam",
 	"main": "server.js",
 	"scripts": {
@@ -19,8 +19,8 @@
 		"url": "https://githost.com/camper/repo.git"
 	},
 	"keywords": [
+		"glitch",
 		"node",
-		"hyperdev",
 		"express",
 		"freecodecamp"
 	],
