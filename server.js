@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 // your first API endpoint... 
 app.get("/api/hello", function (req, res) {
-  res.json({greeting: 'hello API'});
+  return res.json({greeting: 'hello API'});
 });
 
 
@@ -44,7 +44,7 @@ app.get('/api/timestamp/:date_string?', function (req, res) {
     date = new Date(date_input);
   }
   
-  res.json({ unix: date.getTime(), utc: date.toUTCString() });
+  return res.json({ unix: date.getTime(), utc: date.toUTCString() });
 });
 
 function isNumeric(n) {
