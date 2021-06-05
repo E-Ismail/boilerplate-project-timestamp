@@ -1,6 +1,6 @@
 // server.js
 // where your node app starts
-
+require('dotenv').config();
 // init project
 var express = require('express');
 var app = express();
@@ -32,8 +32,8 @@ var listener = app.listen(process.env.PORT, function () {
 });
 
 
-app.get('/api/timestamp/:date_string?', function (req, res) {
-  let date_input = req.params.date_string;
+app.get('/api/:date?', function (req, res) {
+  let date_input = req.params.date;
   let date = new Date();
   
   if (isNumeric(date_input)) {
