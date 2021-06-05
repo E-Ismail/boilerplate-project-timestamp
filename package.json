@@ -2,7 +2,7 @@
 	"name": "freecodecamp-project-timestamp",
 	"version": "1.0.0",
 	"description": "freeCodeCamp - APIs and Microservices Project: Timestamp Microservice",
-	"author": "Adam",
+	"author": "ECHCHERRATE Ismail",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
